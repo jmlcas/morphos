@@ -1,0 +1,9 @@
+services:
+
+  morphos:
+    image: ghcr.io/danvergara/morphos-server:latest
+    ports:
+      - "8280:8080"
+    restart: unless-stopped
+    volumes:
+      - /tmp:/tmp
